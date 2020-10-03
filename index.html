@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta charset='UTF-8'>
+        <title>Personal Portfolio | An Nguyen</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <header>
+            <a href='#' class='logo'>Portfolio</a>
+            <div class="toggle"></div>
+            <ul>
+                <li>
+                    <a href='#'>Home</a>
+                </li>
+                <li>
+                    <a href='#'>About</a>
+                </li>
+                <li>
+                    <a href='#'>Services</a>
+                </li>
+                <li>
+                    <a href='#'>Work</a>
+                </li>
+                <li>
+                    <a href='#'>Contact</a>
+                </li>
+            </ul>
+        </header>
+        <section class="banner">
+            <div class="textBx">
+                <h2>Hello, I'm <br>
+                    <span>An Nguyen</span>
+                </h2>
+
+                <h3>I'm a web developer.</h3>
+                <a href="#" class='btn'>About Me</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx w50">
+                    <h3>I'm a Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos tempore nulla, qui commodi expedita eius, suscipit eligendi quam cum deleniti maiores fuga dolor et. Sequi veritatis et optio. Ut, eaque.</p>
+                </div>
+                <div class="w50">
+                    <img src="images/img1.jpg" class="img">
+                </div>
+            </div>
+        </section>
+        <section class='services'>
+            <div class="heading white">
+                <h2>Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="images/icon1.png">
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon2.png">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon3.png">
+                    <h2>Mobile Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon4.png">
+                    <h2>Photography</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon5.png">
+                    <h2>Writing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon6.png">
+                    <h2>Video Editing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+        </script>
+    </body>
+</html>
